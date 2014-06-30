@@ -6,3 +6,6 @@ Let's use this text file as a chatbox.
 Whenever you guys add a new code: methods, classes, attributes, etc.
 Put it here :)
 -Jude 
+
+Test
+- Giodee
