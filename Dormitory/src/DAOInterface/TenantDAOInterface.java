@@ -26,4 +26,8 @@ public interface TenantDAOInterface {
     public ArrayList<TenantBean> getTenantByExpectedYearofGrad (int year);
     public TenantBean getTenantByContact (int contact);
     
+    public void editTenant (TenantBean tenant);
+    
+    public void deleteTenantbyId(int tenantID);
+    public void deleteTenantbyName(String fname, String lname);
 }
