@@ -6,14 +6,14 @@
 
 package Beans;
 
-import java.sql.Timestamp;
+import static com.oracle.jrockit.jfr.ContentType.Timestamp;
+import java.security.Timestamp;
 
 /**
  *
  * @author User
  */
 public class LogBean {
-    
     private int tenantID;
     private Timestamp in;
     private Timestamp out;
@@ -41,5 +41,4 @@ public class LogBean {
     public void setTenantID(int tenantID) {
         this.tenantID = tenantID;
     }
-    
 }

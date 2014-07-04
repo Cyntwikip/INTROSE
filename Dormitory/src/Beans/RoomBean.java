@@ -11,18 +11,17 @@ package Beans;
  * @author User
  */
 public class RoomBean {
-    
     private int roomID;
     private String status;
     private float currentKW;
-    private float currentcubicmeter;
+    private float currentcubicpermeter;
 
     public float getCurrentKW() {
         return currentKW;
     }
 
-    public float getCurrentcubicmeter() {
-        return currentcubicmeter;
+    public float getCurrentcubicpermeter() {
+        return currentcubicpermeter;
     }
 
     public int getRoomID() {
@@ -37,8 +36,8 @@ public class RoomBean {
         this.currentKW = currentKW;
     }
 
-    public void setCurrentcubicmeter(float currentcubicmeter) {
-        this.currentcubicmeter = currentcubicmeter;
+    public void setCurrentcubicpermeter(float currentcubicpermeter) {
+        this.currentcubicpermeter = currentcubicpermeter;
     }
 
     public void setRoomID(int roomID) {

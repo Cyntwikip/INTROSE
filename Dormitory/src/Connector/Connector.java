@@ -17,10 +17,10 @@ import java.util.logging.Logger;
  */
 public class Connector {
 
-    private final String username = "root";
-    private final String password = "";
-    private final String url = "jdbc:mysql://localhost:3306/connection";
-    private final String driver = "com.mysql.jdbc.Driver";
+    private String username = "root";
+    private String password = "";
+    private String url = "jdbc:mysql://localhost:3306/conection";
+    private String driver = "com.mysql.jdbc.Driver";
 
     public Connection getConnection() {
         try {        

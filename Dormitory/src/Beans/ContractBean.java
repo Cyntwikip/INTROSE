@@ -14,10 +14,10 @@ import java.util.Date;
  */
 public class ContractBean {
     
-     private int tenantID;
-     private String status;
-     private Date yearofentry;
-     private Date yearofexit;
+    private int tenantID;
+    private String status;
+    private Date yearofentry;
+    private Date yearofexit;
 
     public String getStatus() {
         return status;
@@ -50,4 +50,5 @@ public class ContractBean {
     public void setYearofexit(Date yearofexit) {
         this.yearofexit = yearofexit;
     }
+    
 }

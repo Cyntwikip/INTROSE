@@ -11,15 +11,15 @@ package Beans;
  * @author User
  */
 public class TenantBean {
-    private int tenantID;
+    private int tenantid;
     private String fname;
     private String lname;
-    private int roomID;
-    private int contact;
     private String address;
-    private String degree;
+    private int contact;
     private String school;
-    private int expectedyearofgrad;
+    private String degree;
+    private int roomID;
+    private int expectedyearofgraduation;
 
     public String getAddress() {
         return address;
@@ -33,8 +33,8 @@ public class TenantBean {
         return degree;
     }
 
-    public int getExpectedyearofgrad() {
-        return expectedyearofgrad;
+    public int getExpectedyearofgraduation() {
+        return expectedyearofgraduation;
     }
 
     public String getFname() {
@@ -53,8 +53,8 @@ public class TenantBean {
         return school;
     }
 
-    public int getTenantID() {
-        return tenantID;
+    public int getTenantid() {
+        return tenantid;
     }
 
     public void setAddress(String address) {
@@ -69,8 +69,8 @@ public class TenantBean {
         this.degree = degree;
     }
 
-    public void setExpectedyearofgrad(int expectedyearofgrad) {
-        this.expectedyearofgrad = expectedyearofgrad;
+    public void setExpectedyearofgraduation(int expectedyearofgraduation) {
+        this.expectedyearofgraduation = expectedyearofgraduation;
     }
 
     public void setFname(String fname) {
@@ -89,8 +89,9 @@ public class TenantBean {
         this.school = school;
     }
 
-    public void setTenantID(int tenantID) {
-        this.tenantID = tenantID;
+    public void setTenantid(int tenantid) {
+        this.tenantid = tenantid;
     }
+    
     
 }
