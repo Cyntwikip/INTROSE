@@ -18,6 +18,11 @@ public class RoomBean {
     private boolean paidrent;
     private boolean paidelectric;
     private boolean paidwater;
+    private double price;
+
+    public double getPrice() {
+        return price;
+    }
 
     public float getCurrentKW() {
         return currentKW;
@@ -73,6 +78,10 @@ public class RoomBean {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
     
 }

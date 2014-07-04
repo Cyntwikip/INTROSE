@@ -6,10 +6,21 @@
 
 package DAOInterface;
 
+import Beans.ContractBean;
+import java.util.ArrayList;
+import java.util.Date;
+
 /**
  *
  * @author User
  */
 public interface ContractDAOInterface {
     
+    public void addContract(ContractBean contract);
+    
+    public ArrayList<ContractBean> getAllContracts();
+    public ArrayList<ContractBean> getAllContractsByTenantID(int tenantid);
+    public ArrayList<ContractBean> getAllContractsByDate(Date from, Date to);
+    
+    public ArrayList<ContractBean> getLeavingContracts();
 }

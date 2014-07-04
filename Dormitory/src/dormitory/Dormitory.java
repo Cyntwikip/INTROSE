@@ -6,6 +6,15 @@
 
 package dormitory;
 
+import Beans.BillBean;
+import Beans.ContractBean;
+import Beans.ElectricBean;
+import Beans.GuardianBean;
+import Beans.LogBean;
+import Beans.RoomBean;
+import Beans.TenantBean;
+import Beans.WaterBean;
+
 /**
  *
  * @author User
@@ -18,7 +27,35 @@ public class Dormitory {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        System.out.println("hi");
+        
+        
+        BillBean b = new BillBean();
+        System.out.println("bill");
+        
+        ContractBean cb = new ContractBean();
+        System.out.println("contractbean");
+        
+        ElectricBean e = new ElectricBean();
+        System.out.println("electric");
+        
+        GuardianBean gb = new GuardianBean();
+        System.out.println("guardianbean");
+        
+        LogBean lb = new LogBean();
+        System.out.println("logbean");
+        
+        RoomBean rb = new RoomBean();
+        System.out.println("roombean");
+        
+        TenantBean tb = new TenantBean();
+        System.out.println("tenantbean");
+        
+        WaterBean w = new WaterBean();
+        System.out.println("water");
+        
+        
+        
+        
         
     }
     

@@ -15,9 +15,15 @@ import java.security.Timestamp;
  */
 public class LogBean {
     private int tenantID;
+    private int roomID;
     private Timestamp in;
     private Timestamp out;
 
+    public int getRoomID() {
+        return roomID;
+    }
+
+    
     public Timestamp getIn() {
         return in;
     }
@@ -41,4 +47,10 @@ public class LogBean {
     public void setTenantID(int tenantID) {
         this.tenantID = tenantID;
     }
+
+    public void setRoomID(int roomID) {
+        this.roomID = roomID;
+    }
+    
+    
 }

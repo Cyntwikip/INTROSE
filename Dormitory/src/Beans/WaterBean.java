@@ -12,18 +12,12 @@ import java.util.Date;
  *
  * @author User
  */
-public class Water extends Bill{
+public class WaterBean extends BillBean{
     
-    public float currentcubicmeter;
-    public float prevcubicmeter;
+    public float currentcubicpermeter;
+    public float prevcubicpermeter;
     public float pricepercubicmeter;
 
-    public Water(float currentcubicmeter, float prevcubicmeter, float pricepercubicmeter) {
-        this.currentcubicmeter = currentcubicmeter;
-        this.prevcubicmeter = prevcubicmeter;
-        this.pricepercubicmeter = pricepercubicmeter;
-    }
-    
     @Override
     public Date getBillDate() {
         return super.getBillDate(); //To change body of generated methods, choose Tools | Templates.
@@ -34,26 +28,27 @@ public class Water extends Bill{
         return super.getBillID(); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public float getCurrentcubicmeter() {
-        return currentcubicmeter;
-    }
-
-    public float getPrevcubicmeter() {
-        return prevcubicmeter;
-    }
-
     @Override
     public double getPrice() {
         return super.getPrice(); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public float getPricepercubicmeter() {
-        return pricepercubicmeter;
-    }
-
     @Override
     public int getRoomID() {
         return super.getRoomID(); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+
+    public float getCurrentcubicpermeter() {
+        return currentcubicpermeter;
+    }
+
+    public float getPrevcubicpermeter() {
+        return prevcubicpermeter;
+    }
+
+    public float getPricepercubicmeter() {
+        return pricepercubicmeter;
     }
 
     @Override
@@ -66,12 +61,12 @@ public class Water extends Bill{
         super.setBillID(billID); //To change body of generated methods, choose Tools | Templates.
     }
 
-    public void setCurrentcubicmeter(float currentcubicmeter) {
-        this.currentcubicmeter = currentcubicmeter;
+    public void setCurrentcubicpermeter(float currentcubicpermeter) {
+        this.currentcubicpermeter = currentcubicpermeter;
     }
 
-    public void setPrevcubicmeter(float prevcubicmeter) {
-        this.prevcubicmeter = prevcubicmeter;
+    public void setPrevcubicpermeter(float prevcubicpermeter) {
+        this.prevcubicpermeter = prevcubicpermeter;
     }
 
     @Override
@@ -87,4 +82,6 @@ public class Water extends Bill{
     public void setRoomID(int roomID) {
         super.setRoomID(roomID); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    
 }
