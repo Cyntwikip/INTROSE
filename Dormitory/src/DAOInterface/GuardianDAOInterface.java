@@ -6,10 +6,19 @@
 
 package DAOInterface;
 
+import Beans.GuardianBean;
+import java.util.ArrayList;
+
 /**
  *
  * @author User
  */
 public interface GuardianDAOInterface {
+    
+    public void addGuardian (GuardianBean guardian);
+    
+    public GuardianBean getGuardian(int guardianID);
+    public ArrayList<GuardianBean> getAllGuardians();
+    
     
 }

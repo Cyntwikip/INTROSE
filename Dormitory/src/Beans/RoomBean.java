@@ -15,6 +15,9 @@ public class RoomBean {
     private String status;
     private float currentKW;
     private float currentcubicpermeter;
+    private boolean paidrent;
+    private boolean paidelectric;
+    private boolean paidwater;
 
     public float getCurrentKW() {
         return currentKW;
@@ -32,6 +35,30 @@ public class RoomBean {
         return status;
     }
 
+    public boolean isPaidelectric() {
+        return paidelectric;
+    }
+
+    public boolean isPaidrent() {
+        return paidrent;
+    }
+
+    public boolean isPaidwater() {
+        return paidwater;
+    }
+
+    public void setPaidelectric(boolean paidelectric) {
+        this.paidelectric = paidelectric;
+    }
+
+    public void setPaidrent(boolean paidrent) {
+        this.paidrent = paidrent;
+    }
+
+    public void setPaidwater(boolean paidwater) {
+        this.paidwater = paidwater;
+    }
+    
     public void setCurrentKW(float currentKW) {
         this.currentKW = currentKW;
     }

@@ -12,6 +12,7 @@ package Beans;
  */
 public class TenantBean {
     private int tenantid;
+    // pano yung sa image :))
     private String fname;
     private String lname;
     private String address;
